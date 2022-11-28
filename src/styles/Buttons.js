@@ -3,8 +3,9 @@ import styled from "styled-components"
 export const StyledButton = styled.button`
 
     height: ${props => props.big ? '3.75rem' : '2.5rem'};
+    width: max-content;
     padding: 1.25rem;
-
+    
     display: flex;
     flex-direction: row;
     justify-content: center;

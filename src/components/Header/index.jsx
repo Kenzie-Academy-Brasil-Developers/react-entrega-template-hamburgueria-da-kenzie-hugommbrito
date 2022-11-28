@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 
 import logo from "../../assets/BurguerKenzieLogo.png"
 
@@ -6,10 +6,7 @@ import { StyledHeader } from "./style";
 import { StyledButton } from "../../styles/Buttons";
 import { StyledInput } from "../../styles/Inputs";
 
-
-console.log(logo)
-
-export const Header = () => {
+export const Header = ({ filter }) => {
 
     return (
         <StyledHeader >
@@ -19,7 +16,8 @@ export const Header = () => {
                     alt="Logo Burguer Kenzie" />
                 <StyledInput
                     type="text" 
-                    placeholder="Digitar Pesquisa"/>
+                    placeholder="Digitar Pesquisa"
+                    onChange={(e) => filter(e.target.value)}/>
                 <StyledButton >
                     Button Text
                     </StyledButton>

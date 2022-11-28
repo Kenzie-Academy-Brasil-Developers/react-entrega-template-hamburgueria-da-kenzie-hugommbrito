@@ -43,7 +43,7 @@ font-family: 'Roboto', sans-serif;
     --font-weight-2: 600;
     --font-weight-3: 400;
 
-    --radius-1: .25rem; /* 4px */
+    --radius-1: .3125rem; /* 5px */
     --radius-2: .5rem; /* 8px */
 
     --size-1: 3.5rem; /* 56px */
