@@ -20,5 +20,15 @@ export const StyledHeader = styled.div`
         right: .625rem;
     }
 
+    @media (max-width: 950px){
+        div{
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button{
+            display: none;
+        }
+    }
 
 `

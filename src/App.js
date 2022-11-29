@@ -10,8 +10,8 @@ import { Cart } from "./components/Cart";
 function App() {
   const [productList, setProductList] = useState([]);
   const [filteredList, setFilteredList] = useState([]);
-  const [cartList, setCartList] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
+  const [cartList, setCartList] = useState([]);
 
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
@@ -38,6 +38,16 @@ function App() {
   };
 
 
+  const addProductoToCart = (product) => {     
+    const newCartList = [...cartList, product]
+    setCartList(newCartList)  
+  }
+  
+  useEffect(() => {
+    setCartTotal(cartList.reduce((acc, curr) => ((acc.price||acc) + curr.price), 0))
+
+  }, [cartList])
+
   return (
     <>
       <GlobalStyles />
@@ -45,7 +55,7 @@ function App() {
       <StyledMain >
         <StyledCardContainer>
           {filteredList.map((card) => (
-            <Card key={card.id} info={card} setCartList={setCartList} currentCardList={cartList} setCartTotal={setCartTotal}/>
+            <Card key={card.id} info={card} addToCart={addProductoToCart}/>
           ))}
         </StyledCardContainer>
         <Cart cartList={cartList} cartTotal={cartTotal} setCartList={setCartList} setCartTotal={setCartTotal} ></Cart>

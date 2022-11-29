@@ -18,4 +18,8 @@ export const StyledInput = styled.input`
         border: .125rem solid var(--color-primary);
 
     }
+
+    @media (max-width: 950px){
+        width: 90%;
+    }
 `

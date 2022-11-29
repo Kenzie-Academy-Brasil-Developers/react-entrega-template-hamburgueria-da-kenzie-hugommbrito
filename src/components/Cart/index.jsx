@@ -5,16 +5,9 @@ import { StyledCartCotnainer, StyledCartTop, StyledCartCard, StyledCartTotal } f
 
 export const Cart = ({ cartList, cartTotal, setCartList, setCartTotal }) => {
     const removeFromCart = (id) => {
-        // const newCartList = cartList.filter(item => item.id !== Number(id))
-        // setCartList([...newCartList])
-        const clickedItem = cartList.findIndex(item => item.id == id)
-        console.log(clickedItem);
-        console.log(cartList);
-        const newCartList = cartList.filter((item, index) => index != clickedItem);
+        const clickedItem = cartList.findIndex(item => item.id === id)
+        const newCartList = cartList.filter((item, index) => index !== clickedItem);
         setCartList(newCartList);
-        console.log(cartList);
-        
-
         setCartTotal(newCartList.reduce((acc, curr) => acc + curr.price, 0))
     }
 

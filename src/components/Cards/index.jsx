@@ -4,15 +4,9 @@ import { StyledCard } from "./style"
 import { StyledButton } from "../../styles/Buttons";
 
 
-export const Card = ({ info, setCartList, currentCardList, setCartTotal }) => {
+export const Card = ({ key, info, addToCart }) => {
     
-    const addProductoToCart = (product) => {     
-        const newCartList = [...currentCardList, product]
-        setCartList(newCartList)
-        console.log(currentCardList)
-    
-        setCartTotal(currentCardList.reduce((acc, curr) => acc + curr.price, 0))
-    }
+
     
       return (
         <StyledCard >
@@ -25,7 +19,7 @@ export const Card = ({ info, setCartList, currentCardList, setCartTotal }) => {
                     currency: 'BRL',
                 }
                 ))}</h4>
-                <StyledButton onClick={() => addProductoToCart(info)}>Adicionar</StyledButton>
+                <StyledButton onClick={() => addToCart(info)}>Adicionar</StyledButton>
             </div>
         </StyledCard>
     )

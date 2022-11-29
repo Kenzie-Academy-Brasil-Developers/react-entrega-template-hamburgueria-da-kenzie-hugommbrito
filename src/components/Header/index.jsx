@@ -19,8 +19,8 @@ export const Header = ({ filter }) => {
                     placeholder="Digitar Pesquisa"
                     onChange={(e) => filter(e.target.value)}/>
                 <StyledButton >
-                    Button Text
-                    </StyledButton>
+                    Pesquisar
+                </StyledButton>
             </div>
         </StyledHeader>
     )

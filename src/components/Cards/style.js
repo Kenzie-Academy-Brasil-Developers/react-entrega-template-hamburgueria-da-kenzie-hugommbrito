@@ -46,4 +46,10 @@ export const StyledCard = styled.li`
         color: var(--color-primary);
 
     }
+
+    @media (max-width: 950px){
+        max-width: unset;
+        width: 18.75rem;
+        flex-shrink: 0;
+    }
 `

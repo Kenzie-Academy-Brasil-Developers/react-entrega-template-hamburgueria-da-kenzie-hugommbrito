@@ -4,6 +4,12 @@ export const StyledCartCotnainer = styled.div`
     width: 22.8125rem;
     max-width: 28%;
 
+    @media (max-width: 950px){
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
 `
 
 export const StyledCartTop = styled.div`
