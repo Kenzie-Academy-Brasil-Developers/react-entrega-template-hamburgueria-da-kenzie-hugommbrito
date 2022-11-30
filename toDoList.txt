@@ -4,14 +4,14 @@
 ✅       II - Iniciar CRA
 ✅           a - Deletar arquivos Iniciais do CRA
 ✅       III - Iniciar GitFlow
-⬜   2 - Ajutar Scaffold( tudo em STYLED COMPONENTS sem arquivos CSS) 🚨
+✅   2 - Ajutar Scaffold( tudo em STYLED COMPONENTS sem arquivos CSS) 🚨
 ✅       I - GlobalStyles
 ✅       II - Buttons 🚨
 ✅       III - Inputs
-⬜       IV - Fonts
+✅       IV - Fonts
 ✅       V - Cores
 ✅       VI - Criar pastas de componentes
-⬜   3 - Criar e estilizar os componentes
+✅   3 - Criar e estilizar os componentes
 ✅       0 - COMPONENTES OBRIGATÓRIOS 🚨
 ✅           a - Buttons
 ✅           b - Card
@@ -23,28 +23,27 @@
 ✅       I - HEADER
 ✅           a - Logo e InputSearch
 ✅           b - lógica da busca (usar método filter) 🚨
-⬜       II - PORDUCT LIST
+✅       II - PORDUCT LIST
 ✅           a - lógica para renderizar produtos (API Request)
-⬜               > Usar o Axios (Configurar baseURL e timeout) 🚨
+✅               > Usar o Axios (Configurar baseURL e timeout) 🚨
 ✅           b - lógica para enviar produtos ao carrinho 🚨
-⬜           c - lógica para contador de ítens repetidos no carrinho 🚨
-⬜       III - CARRINHO
+✅           c - lógica para contador de ítens repetidos no carrinho 🚨
+✅       III - CARRINHO
 ✅           a - renderizar produtos do carrinho
-⬜           b - renderizar preço total 🚨
-⬜           c - lógica para remover produtos do carrinho
-⬜       IV - Cards 🚨
-⬜       V - Ajustar responsividade 🚨
-⬜       VI - Fazer um favicon
+✅           b - renderizar preço total 🚨
+✅           c - lógica para remover produtos do carrinho
+✅       IV - Cards 🚨
+✅       V - Ajustar responsividade 🚨
+✅       VI - Fazer um favicon
 
-⬜
-⬜       Boas práticas 🚨
-⬜            * Código bem indentado;
-⬜            * Variáveis bem descritivas;
-⬜            * Padronização:
-⬜            - com ou sem ponto e vírgula;
-⬜            - aspas duplas ou aspas simples;
-⬜            - arrow function ou regular function para os
-⬜            componentes
+✅       Boas práticas 🚨
+✅            * Código bem indentado;
+✅            * Variáveis bem descritivas;
+✅            * Padronização:
+✅            - com ou sem ponto e vírgula;
+✅            - aspas duplas ou aspas simples;
+✅            - arrow function ou regular function para os componentes
+
 ⬜
 ⬜
 ⬜
